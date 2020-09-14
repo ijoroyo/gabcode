@@ -1,0 +1,52 @@
+k-Nearest Neighbors 
+
+33274 samples
+   26 predictor
+    2 classes: 'X0', 'X1' 
+
+Pre-processing: centered (26), scaled (26) 
+Resampling: Cross-Validated (10 fold, repeated 3 times) 
+Summary of sample sizes: 29946, 29946, 29947, 29947, 29947, 29946, ... 
+Resampling results across tuning parameters:
+
+  k   ROC        Sens       Spec     
+   5  0.8140761  0.9974862  0.3324009
+   7  0.8335988  0.9982015  0.3181896
+   9  0.8419905  0.9985489  0.3059518
+  11  0.8518130  0.9988146  0.3023776
+  13  0.8593151  0.9990394  0.2886325
+  15  0.8692229  0.9990803  0.2804817
+  17  0.8749828  0.9991927  0.2733489
+  19  0.8798834  0.9992540  0.2708003
+  21  0.8840471  0.9992642  0.2672028
+  23  0.8889587  0.9993460  0.2601321
+
+ROC was used to select the optimal model using the largest value.
+The final value used for the model was k = 23.
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction    0    1
+         0 3598   79
+         1    0   37
+                                               
+               Accuracy : 0.9787               
+                 95% CI : (0.9736, 0.9831)     
+    No Information Rate : 0.9688               
+    P-Value [Acc > NIR] : 0.0001415            
+                                               
+                  Kappa : 0.4757               
+                                               
+ Mcnemar's Test P-Value : < 0.00000000000000022
+                                               
+            Sensitivity : 1.0000               
+            Specificity : 0.3190               
+         Pos Pred Value : 0.9785               
+         Neg Pred Value : 1.0000               
+             Prevalence : 0.9688               
+         Detection Rate : 0.9688               
+   Detection Prevalence : 0.9900               
+      Balanced Accuracy : 0.6595               
+                                               
+       'Positive' Class : 0  
